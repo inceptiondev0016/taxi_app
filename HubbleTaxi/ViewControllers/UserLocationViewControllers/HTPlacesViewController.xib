@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HTPlacesViewController">
+            <connections>
+                <outlet property="airportsButton" destination="Hjj-Xn-eEy" id="nUf-Ep-Csz"/>
+                <outlet property="contactsButton" destination="67v-5f-N7G" id="UVe-iQ-YTf"/>
+                <outlet property="dataNotFoundLabel" destination="fhg-Kt-jnD" id="hU5-J6-9fl"/>
+                <outlet property="facebookButton" destination="cJa-o7-2SO" id="7Gb-cx-Ju1"/>
+                <outlet property="favouritiesButton" destination="Ab6-NA-VBm" id="f96-RY-uGF"/>
+                <outlet property="nearbyButton" destination="IuH-A6-i9m" id="PQF-Xy-R4p"/>
+                <outlet property="placesSearchOptionsScrollView" destination="wvA-ln-f31" id="qRo-rE-6X6"/>
+                <outlet property="placesSearchTF" destination="zya-r5-LoV" id="oJP-FB-glW"/>
+                <outlet property="poweredByGoogleIV" destination="VHz-Ot-RzJ" id="kAL-j5-0sT"/>
+                <outlet property="recentButton" destination="L1L-IW-uhF" id="aZ3-SX-Ch9"/>
+                <outlet property="restaurantsButton" destination="YeL-iC-ZfT" id="Oag-Tn-GJ2"/>
+                <outlet property="searchPlacesTableView" destination="yHe-Q3-DcI" id="nUD-E2-nGC"/>
+                <outlet property="searchingPlaceLabel" destination="U5z-Iu-aS2" id="hdu-kT-CAJ"/>
+                <outlet property="trainStationButton" destination="KJ8-k0-XV7" id="QbG-8I-dTO"/>
+                <outlet property="view" destination="Vjy-Nb-0iz" id="NXC-ef-Xwl"/>
+                <outletCollection property="searchOptionsButtonArray" destination="IuH-A6-i9m" id="0SJ-j1-OQX"/>
+                <outletCollection property="searchOptionsButtonArray" destination="L1L-IW-uhF" id="lSi-2j-oBO"/>
+                <outletCollection property="searchOptionsButtonArray" destination="Ab6-NA-VBm" id="qJv-xH-3qr"/>
+                <outletCollection property="searchOptionsButtonArray" destination="67v-5f-N7G" id="tXu-Yx-DGd"/>
+                <outletCollection property="searchOptionsButtonArray" destination="KJ8-k0-XV7" id="loD-rn-XDx"/>
+                <outletCollection property="searchOptionsButtonArray" destination="Hjj-Xn-eEy" id="SrH-IU-0Eg"/>
+                <outletCollection property="searchOptionsButtonArray" destination="YeL-iC-ZfT" id="1PJ-L9-PpJ"/>
+                <outletCollection property="searchOptionsButtonArray" destination="cJa-o7-2SO" id="pKX-4p-Uqi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Vjy-Nb-0iz" customClass="HTView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wvA-ln-f31" customClass="HTScrollView">
+                    <rect key="frame" x="0.0" y="48" width="320" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IuH-A6-i9m" customClass="HTButton">
+                            <rect key="frame" x="6" y="10" width="70" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Nearby" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" red="1" green="0.54901963470000004" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="nearbyButtonTouched:" destination="-1" eventType="touchUpInside" id="Cop-7n-xKk"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="L1L-IW-uhF" customClass="HTButton">
+                            <rect key="frame" x="84" y="10" width="70" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Recent" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" red="1" green="0.54901963470000004" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="recentButtonTouched:" destination="-1" eventType="touchUpInside" id="FRB-uN-dBE"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ab6-NA-VBm" customClass="HTButton">
+                            <rect key="frame" x="161" y="10" width="70" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Favourities" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" red="1" green="0.54901963470000004" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="favouritiesButtonTouched:" destination="-1" eventType="touchUpInside" id="hf1-oA-9Cv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="67v-5f-N7G" customClass="HTButton">
+                            <rect key="frame" x="163" y="10" width="70" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Contacts" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" red="1" green="0.54901963470000004" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="contactsButtonTouched:" destination="-1" eventType="touchUpInside" id="IRK-vW-5Us"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cJa-o7-2SO" customClass="HTButton">
+                            <rect key="frame" x="85" y="10" width="70" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Facebook" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" red="1" green="0.54901963470000004" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="facebookButtonTouched:" destination="-1" eventType="touchUpInside" id="0fV-M4-meu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KJ8-k0-XV7" customClass="HTButton">
+                            <rect key="frame" x="241" y="10" width="70" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Train Station" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" red="1" green="0.54901963470000004" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="trainStationButtonTouched:" destination="-1" eventType="touchUpInside" id="7Go-lc-cQf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Hjj-Xn-eEy" customClass="HTButton">
+                            <rect key="frame" x="319" y="10" width="70" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Airport" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" red="1" green="0.54901963470000004" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="airportsButtonTouched:" destination="-1" eventType="touchUpInside" id="0be-Xb-8zy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YeL-iC-ZfT" customClass="HTButton">
+                            <rect key="frame" x="398" y="10" width="70" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Restaurants" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_gray_bg.png">
+                                <color key="titleColor" red="1" green="0.54901963470000004" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="restaurantsButtonTouched:" destination="-1" eventType="touchUpInside" id="hH7-dP-u2L"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </scrollView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search Addresss" clearsOnBeginEditing="YES" minimumFontSize="17" background="tf_advance_searchbar.png" clearButtonMode="whileEditing" id="zya-r5-LoV" customClass="HTTextField">
+                    <rect key="frame" x="42" y="18" width="272" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ZpP-t1-ti6"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B9X-Xg-Gfn" customClass="HTButton">
+                    <rect key="frame" x="2" y="18" width="39" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="btn_cross.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="crossButtonTouched:" destination="-1" eventType="touchUpInside" id="Nyt-yK-o4o"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yHe-Q3-DcI" customClass="HTTableView">
+                    <rect key="frame" x="0.0" y="96" width="320" height="355"/>
+                    <autoresizingMask key="autoresizingMask" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hrD-8j-rIc"/>
+                        <outlet property="delegate" destination="-1" id="iKg-Pp-a5O"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching place..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U5z-Iu-aS2" customClass="HTLabel">
+                    <rect key="frame" x="0.0" y="96" width="320" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry, no results found!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fhg-Kt-jnD" customClass="HTLabel">
+                    <rect key="frame" x="26" y="120" width="269" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="powered_by_google_white.png" id="VHz-Ot-RzJ" customClass="HTImageView">
+                    <rect key="frame" x="108" y="459" width="104" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_cross.png" width="78" height="60"/>
+        <image name="btn_gray_bg.png" width="139" height="41"/>
+        <image name="powered_by_google_white.png" width="208" height="32"/>
+        <image name="tf_advance_searchbar.png" width="545" height="71"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

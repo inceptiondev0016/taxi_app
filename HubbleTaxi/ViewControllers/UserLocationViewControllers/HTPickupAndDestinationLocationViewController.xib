@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HTPickupAndDestinationLocationViewController">
+            <connections>
+                <outlet property="advanceSearchButton" destination="MBN-ue-XrK" id="gn1-jh-SsJ"/>
+                <outlet property="calendarContainerView" destination="nIv-8x-bI0" id="8uk-dy-zqG"/>
+                <outlet property="calendarPopupView" destination="AGC-qj-KAS" id="Y6y-By-Zrb"/>
+                <outlet property="calendarView" destination="fV0-eP-OTP" id="tcj-Rh-Tkx"/>
+                <outlet property="calendarViewCancelButton" destination="Rh4-8N-mgH" id="54v-pm-IqC"/>
+                <outlet property="calendarViewOKButton" destination="G0k-Jf-Rfh" id="S7m-My-u17"/>
+                <outlet property="destinationBackButton" destination="joA-9U-5gP" id="z4U-9U-pGb"/>
+                <outlet property="destinationLocationView" destination="QS2-rQ-2oy" id="P4U-uL-MUP"/>
+                <outlet property="destinationNextButton" destination="pqo-BJ-Bcn" id="PIe-uc-KTe"/>
+                <outlet property="estPickupTimeLabel" destination="VCE-KN-Xfy" id="SZk-F5-fXR"/>
+                <outlet property="locationAddressTF" destination="hEd-Z0-eHq" id="bP4-d6-zXY"/>
+                <outlet property="locationArrow" destination="7qI-cO-JoY" id="LLb-vb-MZC"/>
+                <outlet property="locationNumberTF" destination="Det-UJ-XHg" id="E7X-dN-c0F"/>
+                <outlet property="navigateBackButton" destination="n7j-3s-fx1" id="biB-jk-i4O"/>
+                <outlet property="noDestinationYetButton" destination="Bex-wt-i4c" id="SE6-QD-MVi"/>
+                <outlet property="pickupLocationNextButton" destination="Kim-YH-z7s" id="9tC-3N-7RG"/>
+                <outlet property="pickupLocationView" destination="bGu-VQ-Qmx" id="pao-1b-MAm"/>
+                <outlet property="priceLabel" destination="S1k-EB-egx" id="xQg-VX-xeM"/>
+                <outlet property="screenDescriptionLabel" destination="5Hi-1x-unX" id="GHH-83-XHz"/>
+                <outlet property="selectDateTimeButton" destination="ZcI-3C-Zl5" id="V1I-ev-RaD"/>
+                <outlet property="shareOnFbButton" destination="iCD-dM-Gcw" id="7LJ-uO-9YN"/>
+                <outlet property="timePickerView" destination="P0d-9E-q2A" id="uTn-P8-vtX"/>
+                <outlet property="vehicleSelectionButton" destination="Ys0-hu-oi3" id="le8-1K-HhV"/>
+                <outlet property="vehicleSelectionCancelButton" destination="Aad-fA-H5Y" id="Zds-e6-S8y"/>
+                <outlet property="vehicleSelectionContainerView" destination="6kK-ll-Jyq" id="rHa-Ib-7gY"/>
+                <outlet property="vehicleSelectionOKButton" destination="ufF-Pa-A4Z" id="W31-ee-nfU"/>
+                <outlet property="vehicleSelectionPickerView" destination="iyW-9q-ucj" id="bE8-13-d5S"/>
+                <outlet property="vehicleSelectionPopupView" destination="lcv-Rv-yql" id="rXJ-rT-sR5"/>
+                <outlet property="vehicleSelectionVehicleDescriptionLabel" destination="f6F-Ks-w3y" id="bKi-3V-qVz"/>
+                <outlet property="vehicleSelectionVehicleNameLabel" destination="cNX-pg-Yhk" id="Xkr-vL-fyu"/>
+                <outlet property="vehicleSelectionViewTitle" destination="PLy-gh-bYQ" id="ubS-Cw-e6g"/>
+                <outlet property="viaOfScreenBackButton" destination="jKB-N6-yEH" id="WbH-Y0-515"/>
+                <outlet property="viaOfScreenCancelButton" destination="1eu-br-kHj" id="dae-tg-pYH"/>
+                <outlet property="viaOfScreenNextButton" destination="ume-cG-8D9" id="eOD-KU-89q"/>
+                <outlet property="viaRouteBackButton" destination="ial-FM-ewb" id="3VW-PA-vAr"/>
+                <outlet property="viaRouteButton" destination="oxN-nD-zrA" id="V1x-tf-fj1"/>
+                <outlet property="viaRouteCancelButton" destination="aVh-0i-AQA" id="mzc-5z-qFE"/>
+                <outlet property="viaRouteContainerView" destination="bUl-95-LCX" id="eb9-Uu-PUX"/>
+                <outlet property="viaRouteNextButton" destination="R28-hT-idJ" id="IJt-rY-0e1"/>
+                <outlet property="viaScreenOfScreenContainerView" destination="kPU-l4-1lt" id="jdv-WM-Gwb"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="viewToShowMap" destination="2uW-vb-iMA" id="o5i-1V-zWg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Hi-1x-unX" customClass="HTLabel">
+                    <rect key="frame" x="80" y="15" width="160" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.49117122270748359" green="0.50191326530612246" blue="0.13060184035866759" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oxN-nD-zrA" customClass="HTButton">
+                    <rect key="frame" x="284" y="20" width="28" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                    <state key="normal" backgroundImage="btn_via.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="viaRouteButtonTouched:" destination="-1" eventType="touchUpInside" id="vRJ-tf-QHP"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="2uW-vb-iMA">
+                    <rect key="frame" x="0.0" y="63" width="320" height="217"/>
+                    <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_lower_bg.png" id="gNn-Yk-meK">
+                    <rect key="frame" x="0.0" y="266" width="320" height="214"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_a_gray.png" id="7qI-cO-JoY" customClass="HTImageView">
+                    <rect key="frame" x="145" y="128" width="30" height="52"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MBN-ue-XrK" customClass="HTButton">
+                    <rect key="frame" x="272" y="206" width="45" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="btn_search.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="advanceSearchButtonTouched:" destination="-1" eventType="touchUpInside" id="JAN-YD-jYQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ng3-C8-ewe" customClass="HTButton">
+                    <rect key="frame" x="8" y="206" width="45" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="btn_locateme.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="locatemeButtonTouched:" destination="-1" eventType="touchUpInside" id="tCf-Ry-xwm"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 Mins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VCE-KN-Xfy" customClass="HTLabel">
+                    <rect key="frame" x="10" y="72" width="80" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.54901963472366333" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="QS2-rQ-2oy" userLabel="Destination Location View" customClass="HTView">
+                    <rect key="frame" x="0.0" y="278" width="320" height="202"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="joA-9U-5gP" customClass="HTButton">
+                            <rect key="frame" x="20" y="152" width="122" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="btn_back.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="destinationBackButtonTouched:" destination="-1" eventType="touchUpInside" id="lIq-8m-bdz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pqo-BJ-Bcn" customClass="HTButton">
+                            <rect key="frame" x="169" y="153" width="131" height="33"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="btn_dest_next_gray.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="destinationNextButtonTouched:" destination="-1" eventType="touchUpInside" id="iId-2c-KaE"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iCD-dM-Gcw" customClass="HTButton">
+                            <rect key="frame" x="73" y="168" width="162" height="30"/>
+                            <color key="backgroundColor" red="0.91764705879999997" green="0.1960784314" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Share on Facebook">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="shareOnFbButtonTouched:" destination="-1" eventType="touchUpInside" id="52u-F3-PVn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bex-wt-i4c" customClass="HTButton">
+                            <rect key="frame" x="20" y="106" width="280" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="btn_choosedestinationlater.png">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="noDestinationYetButtonTouched:" destination="-1" eventType="touchUpInside" id="m6V-Pv-Usw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.57647058823529407" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="sAO-Q4-3Us" appends="YES" id="heE-ST-79G"/>
+                        <outletCollection property="gestureRecognizers" destination="84h-3T-6Na" appends="YES" id="Fh3-h0-G9q"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="bUl-95-LCX" userLabel="Via Location" customClass="HTView">
+                    <rect key="frame" x="0.0" y="278" width="320" height="202"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aVh-0i-AQA" customClass="HTButton">
+                            <rect key="frame" x="23" y="119" width="273" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="btn_viacancel.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="viaRouteCancelButtonTouched:" destination="-1" eventType="touchUpInside" id="4Gu-fr-4le"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ial-FM-ewb" customClass="HTButton">
+                            <rect key="frame" x="11" y="162" width="122" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="btn_back.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="viaRouteBackButtonTouched:" destination="-1" eventType="touchUpInside" id="BQO-Iw-Rsd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R28-hT-idJ" customClass="HTButton">
+                            <rect key="frame" x="183" y="166" width="131" height="33"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="btn_dest_next_gray.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="viaRouteNextButtonTouched:" destination="-1" eventType="touchUpInside" id="RJq-Ba-LIV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.57647058823529407" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="rRR-HT-eop" appends="YES" id="RD4-my-Zl4"/>
+                        <outletCollection property="gestureRecognizers" destination="Jbq-pB-XOb" appends="YES" id="bFc-AL-D5b"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="kPU-l4-1lt" userLabel="Via Location off screen" customClass="HTView">
+                    <rect key="frame" x="0.0" y="278" width="320" height="202"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1eu-br-kHj" customClass="HTButton">
+                            <rect key="frame" x="23" y="119" width="273" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="btn_viacancel.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="viaRouteCancelButtonTouched:" destination="-1" eventType="touchUpInside" id="DEX-bQ-4uy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jKB-N6-yEH" customClass="HTButton">
+                            <rect key="frame" x="11" y="162" width="122" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="btn_back.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="viaRouteBackButtonTouched:" destination="-1" eventType="touchUpInside" id="BiR-f3-Yno"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ume-cG-8D9" customClass="HTButton">
+                            <rect key="frame" x="183" y="166" width="131" height="33"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="btn_dest_next_gray.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="viaRouteNextButtonTouched:" destination="-1" eventType="touchUpInside" id="P5n-9T-8t8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.57647058823529407" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="rRR-HT-eop" appends="YES" id="p2C-Qh-clH"/>
+                        <outletCollection property="gestureRecognizers" destination="Jbq-pB-XOb" appends="YES" id="ws6-5K-YzQ"/>
+                    </connections>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S1k-EB-egx" customClass="HTLabel">
+                    <rect key="frame" x="20" y="330" width="280" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="bGu-VQ-Qmx" userLabel="Pickup Location View" customClass="HTView">
+                    <rect key="frame" x="0.0" y="278" width="320" height="202"/>
+                    <subviews>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="n7j-3s-fx1" customClass="HTButton">
+                            <rect key="frame" x="0.0" y="173" width="46" height="30"/>
+                            <color key="backgroundColor" red="0.91764705879999997" green="0.1960784314" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Back">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="navigateBack:" destination="-1" eventType="touchUpInside" id="sSM-aE-ZC6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ys0-hu-oi3" customClass="HTButton">
+                            <rect key="frame" x="20" y="58" width="280" height="40"/>
+                            <state key="normal" backgroundImage="btn_pickup_time_vehicle.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="vehicleSelectionButtonTouched:" destination="-1" eventType="touchUpInside" id="zDv-2Q-bFt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZcI-3C-Zl5" customClass="HTButton">
+                            <rect key="frame" x="20" y="105" width="280" height="40"/>
+                            <state key="normal" title="Now" backgroundImage="btn_pickup_time_vehicle.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectDateTimeButtonTouched:" destination="-1" eventType="touchUpInside" id="lE0-PU-Aez"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kim-YH-z7s" customClass="HTButton">
+                            <rect key="frame" x="20" y="153" width="280" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="btn_pickup_next_gray.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pickupLocationNextButtonTouched:" destination="-1" eventType="touchUpInside" id="r2t-0R-MNI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.57647058823529407" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="f2K-wm-2zq" appends="YES" id="IOo-nJ-CKb"/>
+                    </connections>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_search_bar.png" id="n6X-Gg-iP7">
+                    <rect key="frame" x="20" y="286" width="280" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="Det-UJ-XHg" customClass="HTTextField">
+                    <rect key="frame" x="20" y="288" width="37" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="search"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="CKL-Ab-789"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="2" clearButtonMode="whileEditing" id="hEd-Z0-eHq" customClass="HTTextField">
+                    <rect key="frame" x="65" y="287" width="226" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="search"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="aHL-QE-hp5"/>
+                    </connections>
+                </textField>
+                <view hidden="YES" contentMode="scaleToFill" id="lcv-Rv-yql" userLabel="Vehicle popup" customClass="HTView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vehicle_popup_bg.png" id="PYB-13-IO8">
+                            <rect key="frame" x="40" y="75" width="235" height="388"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" id="6kK-ll-Jyq" userLabel="Vehicle selection container" customClass="HTView">
+                            <rect key="frame" x="40" y="75" width="235" height="388"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <subviews>
+                                <pickerView contentMode="scaleToFill" id="iyW-9q-ucj">
+                                    <rect key="frame" x="0.0" y="148" width="240" height="216"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="F87-9m-BWS"/>
+                                        <outlet property="delegate" destination="-1" id="SHN-cb-wFZ"/>
+                                    </connections>
+                                </pickerView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PLy-gh-bYQ" customClass="HTLabel">
+                                    <rect key="frame" x="47" y="0.0" width="147" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cNX-pg-Yhk" customClass="HTLabel">
+                                    <rect key="frame" x="20" y="32" width="200" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" id="f6F-Ks-w3y" customClass="HTLabel">
+                                    <rect key="frame" x="20" y="51" width="200" height="90"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Aad-fA-H5Y" customClass="HTButton">
+                                    <rect key="frame" x="1" y="343" width="116" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    <state key="normal" backgroundImage="btn_cancel.png"/>
+                                    <connections>
+                                        <action selector="vehicleSeclectionCancelButtonTouched:" destination="-1" eventType="touchUpInside" id="rIX-kn-f0Z"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ufF-Pa-A4Z" customClass="HTButton">
+                                    <rect key="frame" x="118" y="343" width="116" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    <state key="normal" backgroundImage="btn_done.png"/>
+                                    <connections>
+                                        <action selector="vehicleSelectionOKButtonTouched:" destination="-1" eventType="touchUpInside" id="VNt-Yh-VQG"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" id="AGC-qj-KAS" userLabel="Calendar popup" customClass="HTView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pickupdate_popup_bg.png" id="TE0-kd-TJG">
+                            <rect key="frame" x="42" y="50" width="237" height="430"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" id="nIv-8x-bI0" userLabel="Calendar container" customClass="HTView">
+                            <rect key="frame" x="40" y="50" width="240" height="430"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="sPf-VV-bCD" customClass="HTLabel">
+                                    <rect key="frame" x="20" y="-4" width="200" height="29"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" id="P0d-9E-q2A">
+                                    <rect key="frame" x="-32" y="-10" width="320" height="216"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="418560085.96923703">
+                                        <!--2014-04-07 10:41:25 +0000-->
+                                    </date>
+                                </datePicker>
+                                <view contentMode="scaleToFill" id="fV0-eP-OTP" customClass="CKCalendarView">
+                                    <rect key="frame" x="10" y="140" width="220" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rh4-8N-mgH" customClass="HTButton">
+                                    <rect key="frame" x="3" y="394" width="116" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <state key="normal" backgroundImage="btn_cancel.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="calendarViewCancelButtonTouched:" destination="-1" eventType="touchUpInside" id="o8i-wL-fTZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G0k-Jf-Rfh" customClass="HTButton">
+                                    <rect key="frame" x="120" y="394" width="116" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <state key="normal" backgroundImage="btn_done.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="calendarViewOKButtonTouched:" destination="-1" eventType="touchUpInside" id="caT-fi-gjD"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140" y="131"/>
+        </view>
+        <swipeGestureRecognizer direction="left" id="f2K-wm-2zq" userLabel="pickup_left">
+            <connections>
+                <action selector="pickupLocationLeftSwipeRecognized:" destination="-1" id="gja-ab-yVV"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="right" id="sAO-Q4-3Us" userLabel="destination_right">
+            <connections>
+                <action selector="destinationLocationRightSwipeRecognized:" destination="-1" id="ufl-bJ-xI4"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="left" id="84h-3T-6Na" userLabel="destination_left">
+            <connections>
+                <action selector="destinationLocationLeftSwipeRecognized:" destination="-1" id="kYG-VX-3rK"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="left" id="rRR-HT-eop" userLabel="via_left">
+            <connections>
+                <action selector="viaLocationLeftSwipeRecognized:" destination="-1" id="vHZ-ib-2AO"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="right" id="Jbq-pB-XOb" userLabel="via_right">
+            <connections>
+                <action selector="viaLocationRightSwipeRecognized:" destination="-1" id="Jz2-Je-CTI"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="btn_back.png" width="245" height="77"/>
+        <image name="btn_cancel.png" width="232" height="65"/>
+        <image name="btn_choosedestinationlater.png" width="563" height="76"/>
+        <image name="btn_dest_next_gray.png" width="263" height="66"/>
+        <image name="btn_done.png" width="236" height="66"/>
+        <image name="btn_locateme.png" width="91" height="91"/>
+        <image name="btn_pickup_next_gray.png" width="559" height="73"/>
+        <image name="btn_pickup_time_vehicle.png" width="559" height="78"/>
+        <image name="btn_search.png" width="91" height="91"/>
+        <image name="btn_via.png" width="57" height="57"/>
+        <image name="btn_viacancel.png" width="564" height="73"/>
+        <image name="location_a_gray.png" width="60" height="105"/>
+        <image name="location_lower_bg.png" width="640" height="428"/>
+        <image name="location_search_bar.png" width="559" height="79"/>
+        <image name="pickupdate_popup_bg.png" width="475" height="836"/>
+        <image name="vehicle_popup_bg.png" width="471" height="776"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
